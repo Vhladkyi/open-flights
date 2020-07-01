@@ -12,7 +12,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'rubocop-rails', require: false
 gem 'sass-rails', '>= 6'
 gem 'slim-rails'
-gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 
 group :development, :test do
