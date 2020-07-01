@@ -1,0 +1,19 @@
+dist: xenial
+language: ruby
+rvm:
+  - 2.7.1
+cache:
+  bundler: true
+  yarn: true
+install:
+  - travis_retry nvm install 13.5.0
+  - bundle
+  - yarn
+before_script:
+  - rake db:setup
+  - bundle exec rails webpacker:compile
+script:
+  - bundle exec rubocop --require rubocop-rails
+services:
+  - postgresql
+  - xvfb
