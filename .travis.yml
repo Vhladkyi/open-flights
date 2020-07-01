@@ -6,7 +6,7 @@ cache:
   bundler: true
   yarn: true
 install:
-  - travis_retry nvm install 13.5.0
+  - travis_retry nvm install v14.4.0
   - bundle
   - yarn
 before_script:
