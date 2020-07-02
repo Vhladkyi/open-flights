@@ -10,7 +10,7 @@ module Api
       end
 
       def show
-        render json: AirlineSerializer.new(@airline).serialized_json
+        render json: AirlineSerializer.new(@airline, options).serialized_json
       end
 
       def create
